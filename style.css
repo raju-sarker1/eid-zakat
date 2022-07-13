@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+h1{
+    margin: 0;
+}
+
+:root{
+    --dark_title: rgb(26, 26, 26);
+    --light_title: rgb(243, 243, 243);
+    --dark_para: rgb(46, 46, 46);
+    --light_para: rgb(199, 199, 199);
+    --primary_color: #EF233C;
+}
+
+.hero_section{
+    background-image: linear-gradient(90deg, rgb(56 56 56 / 81%), rgb(255 255 255 / 0%)), url(./assets//Rectangle-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    /* padding: 100px; */
+}
+
+h1{
+    font-size: 50px;
+}
+section h1, section p{
+    color: var(--light_title);
+}
+
+
+.hero_section .content{
+    max-width: 400px;
+    padding-top: 100px;
+  
+}
+.hero_section .btn{
+    width: max-content;
+}
+
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.btn{
+    background-color: var(--primary_color);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--light_title);
+}
+.btn:hover{
+    transform: translateY(-3px);
+}
+.second_section{
+    margin-top: 100px;
+
+}
+.second_section h2{
+    color: var(--dark_title)
+}
+.second_section p{
+    color: var(--dark_para)
+}
+.row{
+    display: flex;
+}
+
+.row > div{
+    width: 50%;
+}
+.second_section img{
+    width: 100%;
+}
+
+.image_root{
+    position: relative;
+}
+.image_root::before{
+    content: "";
+    background-image: url("./assets/Group-9659.png");
+    width: 114px;
+    background-repeat: no-repeat;
+    height: 114px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
